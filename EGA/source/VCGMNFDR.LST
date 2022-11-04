@@ -1,0 +1,47 @@
+					PAGE,120 
+					SUBTTL	MONOCHROME CHARACTER GENERATOR	-  ALPHA SUPPLEMENT 
+ 0000				CODE	SEGMENT PUBLIC 
+					PUBLIC	CGMN_FDG 
+ 0000				CGMN_FDG	LABEL	BYTE 
+				 
+				; STRUCTURE OF THIS FILE 
+				;	DB	XXH	WHERE XX IS THE HEX CODE FOR THE FOLLOWING CHAR 
+				;	DB	[BYTES 0 - 13 OF THAT CHARACTER] 
+				;	... 
+				;	DB	00H	INDICATES NO MORE REPLACEMENTS TO BE DONE 
+				 
+				;1842{ 
+				ELSE 
+ 0000  012C[				DB	12CH DUP (00H) 
+	   00			
+			 ]	
+				ENDIF 
+				;}1842 
+ 012C  00				DB	000H					; NO MORE 
+ 012D				CODE	ENDS 
+					END 
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	012D	PARA	PUBLIC	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+CGMN_FDG . . . . . . . . . . . .  	L BYTE	0000	CODE	Global
+
+RUS_EGA  . . . . . . . . . . . .  	TEXT  		
+
+@FILENAME  . . . . . . . . . . .  	TEXT  VCGMNFDG		
+
+
+     81 Source  Lines
+     81 Total   Lines
+      5 Symbols
+
+  49676 + 415684 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

@@ -1,0 +1,30 @@
+					PAGE,120 
+					SUBTTL	END ADDRESS 
+ 0000				CODE	SEGMENT PUBLIC 
+				PUBLIC	END_ADDRESS 
+ 0000				END_ADDRESS	LABEL	BYTE 
+ 0000				CODE	ENDS 
+					END 
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	0000	PARA	PUBLIC	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+END_ADDRESS  . . . . . . . . . .  	L BYTE	0000	CODE	Global
+
+@FILENAME  . . . . . . . . . . .  	TEXT  VEND		
+
+
+      7 Source  Lines
+      7 Total   Lines
+      4 Symbols
+
+  49736 + 415416 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

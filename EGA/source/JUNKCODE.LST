@@ -1,0 +1,614 @@
+				;junk code found at the end of ES-1842 EGA BIOS
+				 firmware 
+				;formal disassembly by L.Yadrennikov (RCgoff) O
+				ct-2022 
+				include junkseg.inc 
+ 0000                        C	lib1 segment at 2087h 
+ 0000                        C		funct01 label far 
+ 01FC                        C		org 01fch 
+ 01FC                        C		funct02 label far 
+ 01FC                        C	lib1 ends 
+			     C	 
+ 0000                        C	lib2 segment at 20c8h 
+ 001C                        C		org 001ch 
+ 001C                        C		funct03 label far 
+			     C	 
+ 0043                        C		org 0043h 
+ 0043                        C		funct04 label far 
+			     C	 
+ 01A7                        C		org 01a7h 
+ 01A7                        C		funct05 label far 
+			     C	 
+ 01EE                        C		org 01eeh 
+ 01EE                        C		funct06 label far 
+ 01EE                        C	lib2 ends 
+			     C	 
+ 0000                        C	lib3 segment at 2110h 
+ 02ED                        C		org 02edh 
+ 02ED                        C		funct07 label far 
+			     C	 
+ 02F7                        C		org 02f7h 
+ 02F7                        C		funct08 label far 
+			     C	 
+ 0402                        C		org 0402h 
+ 0402                        C		funct09 label far 
+ 0402                        C	lib3 ends 
+			     C	 
+ 0000                        C	lib4 segment at 2158h 
+ 0306                        C		org 0306h 
+ 0306                        C		funct10 label far 
+ 0306                        C	lib4 ends 
+			     C	 
+ 0000                        C	lib5 segment at 24c9h 
+ 000F                        C		org 0fh 
+ 000F                        C		funct11 label far 
+ 000F                        C	lib5 ends 
+				 
+				include junkdata.inc 
+ 0000                        C	data segment at 4000h 
+ 00AC                        C		org 0ach 
+ 00AC  ??                    C		data01 db ? 
+ 00B2                        C		org 0b2h 
+ 00B2  ????                  C		data02 dw ? 
+ 00B6                        C		org 0b6h 
+ 00B6  ??                    C		data03 db ? 
+ 00B8                        C		org 0b8h 
+ 00B8  ??                    C		data04 db ? 
+ 00BC                        C		org 0bch 
+ 00BC  ????                  C		data05 dw ? 
+ 00C0                        C		org 0c0h 
+ 00C0  ????                  C		data06 dw ? 
+ 00C2  ??                    C		data07 db ?	 
+ 00D8                        C		org 0d8h 
+ 00D8  ??                    C		data08 db ? 
+ 00DC                        C		org 0dch 
+ 00DC  ????                  C		data09 dw ? 
+ 00E0                        C		org 0e0h 
+ 00E0  ????                  C		data10 dw ? 
+ 00E2  ??                    C		data11 db ? 
+ 00E6                        C		org 0e6h 
+ 00E6  ??                    C		data12 db ? 
+ 00EC                        C		org 0ech 
+ 00EC  ??                    C		data13 db ? 
+ 00EE                        C		org 0eeh 
+ 00EE  ??                    C		data14 db ? 
+ 00F0                        C		org 0f0h 
+ 00F0  ??                    C		data15 db ? 
+ 00F2                        C		org 0f2h 
+ 00F2  ????                  C		data16 dw ? 
+ 00F4                        C		org 0f4h 
+ 00F4  ????                  C		data17 dw ? 
+ 00F6  ????                  C		data18 dw ? 
+ 00F8  ????                  C		data19 dw ? 
+ 00FA  ????                  C		data20 dw ? 
+ 00FC  ????                  C		data21 dw ? 
+			     C	 
+ 010A                        C		org 10ah 
+ 010A  ??                    C		data22 db ? 
+ 0138                        C		org 138h 
+ 0138  ??                    C		data23 db ? 
+			     C	 
+ 023C                        C		org 23ch 
+ 023C  ??                    C		data24 db ? 
+ 0286                        C		org 286h 
+ 0286  ??                    C		data25 db ? 
+ 0288                        C		org 288h 
+ 0288  ??                    C		data26 db ? 
+ 0296                        C		org 296h 
+ 0296  ????                  C		data27 dw ? 
+ 029A                        C		org 29ah 
+ 029A  ????                  C		data28 dw ? 
+ 029C  ????                  C		data29 dw ? 
+ 02AE                        C		org 2aeh 
+ 02AE  ??                    C		data30 db ? 
+			     C	 
+ 0376                        C		org 376h 
+ 0376  ????                  C		data31 dw ? 
+ 0386                        C		org 386h 
+ 0386  ????                  C		data32 dw ? 
+ 038E                        C		org 38eh 
+ 038E  ??                    C		data33 db ? 
+ 0390                        C		org 390h 
+ 0390  ??                    C		data34 db ? 
+ 03A6                        C		org 3a6h 
+ 03A6  ????                  C		data35 dw ? 
+ 03AA                        C		org 3aah 
+ 03AA  ????                  C		data36 dw ? 
+ 03B6                        C		org 3b6h 
+ 03B6  ????                  C		data37 dw ? 
+ 03B8  ????                  C		data38 dw ? 
+ 03BA                        C		org 3bah 
+ 03BA  ????                  C		data39 dw ? 
+ 03C2                        C		org 3c2h 
+ 03C2  ????                  C		data40 dw ? 
+ 03C4  ????                  C		data41 dw ? 
+ 03CE                        C		org 3ceh 
+ 03CE  ????                  C		data42 dw ? 
+			     C	 
+ 0BDC                        C		org 0bdch 
+ 0BDC  ??                    C		data43 db ? 
+			     C	 
+ 17D2                        C		org 17d2h 
+ 17D2  ??                    C		data44 db ? 
+ 17D3  ??                    C		data45 db ? 
+			     C	 
+ 68F4                        C		org 68f4h 
+ 68F4  ????                  C		data46 dw ? 
+ 68F6                        C	data ends 
+				 
+				 
+				caller	MACRO val1, val2, val3, val4, val5 
+				local skip87, maclop, skpinc, exit 
+					CMP     [val1],00  
+					JZ      exit      
+					TEST    [data11],01   
+					JNZ     skip87 
+					funcall funct08 val2 val3 
+					CALL    funct07            
+				skip87: funcall funct04 10h val4 
+					CALL    funct03            
+					CALL    nearsub2                 
+					CALL    nearsub3                 
+					MOV     AX,[val1]            
+					MOV     [BP-02],AX           
+				maclop:	CMP     WORD PTR [BP-02],00 
+					JZ      exit      
+					TEST    [data01],01   
+					JZ      skpinc       
+					INC     [data02]      
+				skpinc:	XOR     AX,AX                
+					PUSH    AX                   
+					PUSH    [BP-02]              
+					CALL    nearsub4                 
+					CALL    nearsub3                 
+					MOV     SI,[BP-02]           
+					MOV     AX,[SI+val5]           
+					MOV     [BP-02],AX           
+					JMP     maclop       
+				exit: 
+					ENDM 
+				 
+				funcall MACRO funname, nestval1, nestval2 
+					MOV     AX,nestval1              
+					PUSH    AX                   
+					MOV     AX,nestval2              
+					PUSH    AX                   
+					CALL    funname            
+					ENDM 
+				 
+				func5call MACRO arg 
+					MOV     BX,arg   
+					PUSH    BX        
+					XOR     BX,BX     
+					PUSH    BX        
+					PUSH    [data05]    
+					CALL    funct05 
+					ENDM 
+				 
+				exitproc MACRO 
+					MOV     SP,BP 
+					POP     BP 
+					RET 
+					ENDM 
+				 
+				 
+ 0000				_TEXT segment word public 'CODE' 
+				assume cs:_TEXT,ds:DATA 
+				 
+ 2B54				org	2b54h 
+ 2B54				nearsub1 label near 
+ 30D9				org	30d9h 
+ 30D9				nearsub2 label near 
+ 30F4				org	30f4h 
+ 30F4				nearsub3 label near 
+ 313D				org	313dh 
+ 313D				nearsub4 label near 
+ 35F7				org	35f7h 
+ 35F7				nearsub5 label near 
+				 
+ 3960				org	3960h	;code beginning 
+ 3960				proc1 proc near 
+ 3960  74 06				JZ      p1lbl1 
+ 3962  80 7C 16 02			CMP     BYTE PTR [SI+16h],02 
+ 3966  75 09				JNZ     p1lbl2 
+ 3968  8B 76 FE			p1lbl1:	MOV     SI,[BP-02] 
+ 396B  FF 74 0A				PUSH    [SI+0Ah] 
+ 396E  E8 35F7 R			CALL    nearsub5 
+ 3971  E8 30F4 R		p1lbl2:	CALL    nearsub3 
+ 3974  8B E5				MOV     SP,BP 
+ 3976  5D				POP     BP 
+ 3977  C2 0002				RET     0002 
+ 397A				proc1 endp 
+				 
+ 397A				proc2 proc near 
+ 397A  E8 3ECB R			CALL    nearsub6 
+ 397D  00 00				ADD     [BX+SI],AL 
+ 397F  C6 06 023C R 00			MOV     [data24],00 
+ 3984  C7 06 03C4 R 0000		MOV     [data41],0000 
+ 398A  A1 00F2 R			MOV     AX,[data16] 
+ 398D  A2 00F0 R			MOV     [data15],AL 
+ 3990  C7 06 03AA R 0000		MOV     [data36],0000 
+ 3996  C7 06 03A6 R 0000		MOV     [data35],0000 
+ 399C  C7 06 0376 R 0000		MOV     [data31],0000 
+ 39A2  C6 06 00B6 R 0A			MOV     [data03],0Ah 
+ 39A7  C6 06 00B8 R 00			MOV     [data04],00 
+ 39AC  C6 06 00E6 R 00			MOV     [data12],00 
+ 39B1  C6 06 00C2 R 00			MOV     [data07],00 
+ 39B6  C6 06 0390 R 00			MOV     [data34],00 
+ 39BB  C6 06 038E R 00			MOV     [data33],00 
+ 39C0  C6 06 0286 R 00			MOV     [data25],00 
+ 39C5  C6 06 0288 R 00			MOV     [data26],00 
+ 39CA  C6 06 00EE R 01			MOV     [data14],01 
+ 39CF  C6 06 00D8 R 01			MOV     [data08],01 
+ 39D4  C7 06 00BC R 0000		MOV     [data05],0000 
+ 39DA  C7 06 00C0 R 0000		MOV     [data06],0000 
+ 39E0  C6 06 00EC R 01			MOV     [data13],01 
+ 39E5  C7 06 00FA R 0001		MOV     [data20],0001 
+ 39EB  C7 06 00FC R 0000		MOV     [data21],0000 
+ 39F1  C7 06 00F6 R 0039		MOV     [data18],0039h 
+ 39F7  C7 06 00F4 R 003A		MOV     [data17],003Ah 
+ 39FD  C7 06 0386 R FFFF		MOV     [data32],0FFFFh 
+ 3A03  C7 06 00F8 R 0050		MOV     [data19],0050h 
+ 3A09  C7 06 03C2 R 0000		MOV     [data40],0000 
+ 3A0F  8B 36 03C2 R		label3:	MOV     SI,[data40] 
+ 3A13  D1 E6				SHL     SI,1 
+ 3A15  C7 84 028C 0000			MOV     WORD PTR [SI+028Ch],0000 
+ 3A1B  A1 03C2 R			MOV     AX,[data40] 
+ 3A1E  40				INC     AX 
+ 3A1F  A3 03C2 R			MOV     [data40],AX 
+ 3A22  3D 0004				CMP     AX,0004 
+ 3A25  75 E8				JNZ     label3 
+ 3A27  C7 06 0296 R 0000		MOV     [data27],0000 
+ 3A2D  C7 06 029A R 0000		MOV     [data28],0000 
+ 3A33  C7 06 029C R 0000		MOV     [data29],0000 
+ 3A39  C7 06 03B8 R 0000		MOV     [data38],0000 
+ 3A3F  C7 06 03CE R 0000		MOV     [data42],0000 
+ 3A45  A1 00E0 R			MOV     AX,[data10] 
+ 3A48  32 E4				XOR     AH,AH 
+ 3A4A  2D 0009				SUB     AX,0009 
+ 3A4D  F7 D8				NEG     AX 
+ 3A4F  A3 00DC R			MOV     [data09],AX 
+ 3A52  33 C0				XOR     AX,AX 
+ 3A54  50				PUSH    AX 
+ 3A55  50				PUSH    AX 
+ 3A56  E8 2B54 R			CALL    nearsub1 
+					exitproc 
+ 3A59  8B E5                 1		MOV     SP,BP 
+ 3A5B  5D                    1		POP     BP 
+ 3A5C  C3                    1		RET 
+ 3A5D				proc2 endp 
+				 
+ 3A5D				proc3 proc near 
+ 3A5D  E8 3ECB R			CALL    nearsub6 
+ 3A60  02 00				ADD     AL,[BX+SI] 
+					caller data28 0dh 0ca0h 1c31h 1eh 
+ 3A62  83 3E 029A R 00       1		CMP     [data28],00 
+ 3A67  74 5F                 1		JZ      ??0003 
+ 3A69  F6 06 00E2 R 01       1		TEST    [data11],01 
+ 3A6E  75 12                 1		JNZ     ??0000 
+ 3A70  B8 000D               2		MOV     AX,0dh 
+ 3A73  50                    2		PUSH    AX 
+ 3A74  B8 0CA0               2		MOV     AX,0ca0h 
+ 3A77  50                    2		PUSH    AX 
+ 3A78  9A 02F7 ---- R        2		CALL    funct08 
+ 3A7D  9A 02ED ---- R        1		CALL    funct07 
+ 3A82                        1	??0000: funcall funct04 10h 1c31h 
+ 3A82  B8 0010               2		MOV     AX,10h 
+ 3A85  50                    2		PUSH    AX 
+ 3A86  B8 1C31               2		MOV     AX,1c31h 
+ 3A89  50                    2		PUSH    AX 
+ 3A8A  9A 0043 ---- R        2		CALL    funct04 
+ 3A8F  9A 001C ---- R        1		CALL    funct03 
+ 3A94  E8 30D9 R             1		CALL    nearsub2 
+ 3A97  E8 30F4 R             1		CALL    nearsub3 
+ 3A9A  A1 029A R             1		MOV     AX,[data28] 
+ 3A9D  89 46 FE              1		MOV     [BP-02],AX 
+ 3AA0  83 7E FE 00           1	??0001:	CMP     WORD PTR [BP-02],00 
+ 3AA4  74 22                 1		JZ      ??0003 
+ 3AA6  F6 06 00AC R 01       1		TEST    [data01],01 
+ 3AAB  74 04                 1		JZ      ??0002 
+ 3AAD  FF 06 00B2 R          1		INC     [data02] 
+ 3AB1  33 C0                 1	??0002:	XOR     AX,AX 
+ 3AB3  50                    1		PUSH    AX 
+ 3AB4  FF 76 FE              1		PUSH    [BP-02] 
+ 3AB7  E8 313D R             1		CALL    nearsub4 
+ 3ABA  E8 30F4 R             1		CALL    nearsub3 
+ 3ABD  8B 76 FE              1		MOV     SI,[BP-02] 
+ 3AC0  8B 44 1E              1		MOV     AX,[SI+1eh] 
+ 3AC3  89 46 FE              1		MOV     [BP-02],AX 
+ 3AC6  EB D8                 1		JMP     ??0001 
+ 3AC8                        1	??0003: 
+					caller data29 0fh 0caeh 1c43h 1ch 
+ 3AC8  83 3E 029C R 00       1		CMP     [data29],00 
+ 3ACD  74 5F                 1		JZ      ??0007 
+ 3ACF  F6 06 00E2 R 01       1		TEST    [data11],01 
+ 3AD4  75 12                 1		JNZ     ??0004 
+ 3AD6  B8 000F               2		MOV     AX,0fh 
+ 3AD9  50                    2		PUSH    AX 
+ 3ADA  B8 0CAE               2		MOV     AX,0caeh 
+ 3ADD  50                    2		PUSH    AX 
+ 3ADE  9A 02F7 ---- R        2		CALL    funct08 
+ 3AE3  9A 02ED ---- R        1		CALL    funct07 
+ 3AE8                        1	??0004: funcall funct04 10h 1c43h 
+ 3AE8  B8 0010               2		MOV     AX,10h 
+ 3AEB  50                    2		PUSH    AX 
+ 3AEC  B8 1C43               2		MOV     AX,1c43h 
+ 3AEF  50                    2		PUSH    AX 
+ 3AF0  9A 0043 ---- R        2		CALL    funct04 
+ 3AF5  9A 001C ---- R        1		CALL    funct03 
+ 3AFA  E8 30D9 R             1		CALL    nearsub2 
+ 3AFD  E8 30F4 R             1		CALL    nearsub3 
+ 3B00  A1 029C R             1		MOV     AX,[data29] 
+ 3B03  89 46 FE              1		MOV     [BP-02],AX 
+ 3B06  83 7E FE 00           1	??0005:	CMP     WORD PTR [BP-02],00 
+ 3B0A  74 22                 1		JZ      ??0007 
+ 3B0C  F6 06 00AC R 01       1		TEST    [data01],01 
+ 3B11  74 04                 1		JZ      ??0006 
+ 3B13  FF 06 00B2 R          1		INC     [data02] 
+ 3B17  33 C0                 1	??0006:	XOR     AX,AX 
+ 3B19  50                    1		PUSH    AX 
+ 3B1A  FF 76 FE              1		PUSH    [BP-02] 
+ 3B1D  E8 313D R             1		CALL    nearsub4 
+ 3B20  E8 30F4 R             1		CALL    nearsub3 
+ 3B23  8B 76 FE              1		MOV     SI,[BP-02] 
+ 3B26  8B 44 1C              1		MOV     AX,[SI+1ch] 
+ 3B29  89 46 FE              1		MOV     [BP-02],AX 
+ 3B2C  EB D8                 1		JMP     ??0005 
+ 3B2E                        1	??0007: 
+ 3B2E  83 3E 00BC R 00			CMP     [data05],00 
+ 3B33  74 59				JZ      exit                
+ 3B35  F6 06 00AC R 01			TEST    [data01],01  
+ 3B3A  74 04				JZ      skip_inc                
+ 3B3C  FF 06 00B2 R			INC     [data02] 
+ 3B40				skip_inc: 
+ 3B40  F6 06 00E2 R 01			TEST    [data11],01 
+ 3B45  75 0D				JNZ     skip_fun8 
+					funcall funct08 13h 0cbeh 
+ 3B47  B8 0013               1		MOV     AX,13h 
+ 3B4A  50                    1		PUSH    AX 
+ 3B4B  B8 0CBE               1		MOV     AX,0cbeh 
+ 3B4E  50                    1		PUSH    AX 
+ 3B4F  9A 02F7 ---- R        1		CALL    funct08 
+ 3B54				skip_fun8: 
+					func5call 1c54h 
+ 3B54  BB 1C54               1		MOV     BX,1c54h 
+ 3B57  53                    1		PUSH    BX 
+ 3B58  33 DB                 1		XOR     BX,BX 
+ 3B5A  53                    1		PUSH    BX 
+ 3B5B  FF 36 00BC R          1		PUSH    [data05] 
+ 3B5F  9A 01A7 ---- R        1		CALL    funct05 
+ 3B64  9A 02ED ---- R			CALL    funct07 
+					funcall funct04 13h 0cbeh 
+ 3B69  B8 0013               1		MOV     AX,13h 
+ 3B6C  50                    1		PUSH    AX 
+ 3B6D  B8 0CBE               1		MOV     AX,0cbeh 
+ 3B70  50                    1		PUSH    AX 
+ 3B71  9A 0043 ---- R        1		CALL    funct04 
+					func5call 1c58h 
+ 3B76  BB 1C58               1		MOV     BX,1c58h 
+ 3B79  53                    1		PUSH    BX 
+ 3B7A  33 DB                 1		XOR     BX,BX 
+ 3B7C  53                    1		PUSH    BX 
+ 3B7D  FF 36 00BC R          1		PUSH    [data05] 
+ 3B81  9A 01A7 ---- R        1		CALL    funct05 
+ 3B86  9A 001C ---- R			CALL    funct03 
+ 3B8B  E8 30D9 R			CALL    nearsub2      
+ 3B8E				exit:	exitproc 
+ 3B8E  8B E5                 1		MOV     SP,BP 
+ 3B90  5D                    1		POP     BP 
+ 3B91  C3                    1		RET 
+ 3B92				proc3 endp 
+				 
+ 3B92				proc4 proc near 
+ 3B92  E8 3ECB R			CALL    nearsub6                 
+ 3B95  00 00				ADD     [BX+SI],AL           
+ 3B97  83 3E 03C4 R 00			CMP     [data41],00  
+ 3B9C  75 5D				JNZ     p4skip                 
+ 3B9E  80 3E 02AE R 00			CMP     [data30],00   
+ 3BA3  74 3E				JZ      p4lbl2                 
+ 3BA5  C7 06 03C2 R 0001		MOV     [data40],0001 
+ 3BAB  8B 36 03C2 R		p4loop:	MOV     SI,[data40]            
+ 3BAF  8B 84 02AD			MOV     AX,[SI+02ADh]         
+ 3BB3  88 84 0118			MOV     [SI+0118h],AL         
+ 3BB7  A1 03C2 R			MOV     AX,[data40]            
+ 3BBA  40				INC     AX                   
+ 3BBB  A3 03C2 R			MOV     [data40],AX            
+ 3BBE  3D 0020				CMP     AX,0020h              
+ 3BC1  75 E8				JNZ     p4loop                 
+ 3BC3  C6 06 0138 R 0D			MOV     [data23],0Dh   
+ 3BC8  C7 06 03B6 R 0001		MOV     [data37],0001 
+ 3BCE  9A 0306 ---- R			CALL    funct10            
+ 3BD3  C7 06 03B6 R 0001		MOV     [data37],0001 
+ 3BD9  80 3E 17D2 R 00			CMP     [data44],00   
+ 3BDE  74 03				JZ      p4lbl2                 
+ 3BE0  E8 FF1D R			CALL    nearsub9 
+ 3BE3  83 3E 03C4 R 00		p4lbl2:	CMP     [data41],00  
+ 3BE8  75 11				JNZ     p4skip                 
+ 3BEA  C6 06 17D2 R 01			MOV     [data44],01   
+ 3BEF  C6 06 17D3 R 41			MOV     [data45],41h   
+ 3BF4  B8 03C4 R			MOV     AX,offset data41              
+ 3BF7  50				PUSH    AX                   
+ 3BF8  E8 8A9E R			CALL    nearsub8                 
+ 3BFB  C6 06 0BDC R 01		p4skip:	MOV     [data43],01   
+ 3C00  FF 36 03C4 R			PUSH    [data41]               
+ 3C04  E8 7FF1 R			CALL    nearsub7                 
+ 3C07  B8 03C4 R			MOV     AX,offset data41              
+ 3C0A  50				PUSH    AX                   
+ 3C0B  9A 01FC ---- R			CALL    funct02 
+					exitproc 
+ 3C10  8B E5                 1		MOV     SP,BP 
+ 3C12  5D                    1		POP     BP 
+ 3C13  C3                    1		RET 
+ 3C14				proc4 endp 
+				 
+ 3C14				proc5 proc near 
+ 3C14  E8 3ECB R			CALL    nearsub6 
+ 3C17  04 00				ADD     AL,00 
+ 3C19  9A 01EE ---- R			CALL    funct06 
+ 3C1E  B8 000A				MOV     AX,000Ah 
+ 3C21  50				PUSH    AX 
+					funcall funct01 09h 0d32h 
+ 3C22  B8 0009               1		MOV     AX,09h 
+ 3C25  50                    1		PUSH    AX 
+ 3C26  B8 0D32               1		MOV     AX,0d32h 
+ 3C29  50                    1		PUSH    AX 
+ 3C2A  9A 0000 ---- R        1		CALL    funct01 
+ 3C2F  9A 000F ---- R			CALL    funct11 
+ 3C34  E8 397A R			CALL    proc2 
+ 3C37  E8 3A5D R			CALL    proc3 
+ 3C3A  FF 36 03BA R			PUSH    [data39] 
+ 3C3E  9A 0402 ---- R			CALL    funct09 
+ 3C43  F6 06 010A R 01			TEST    [data22],01 
+ 3C48  74 5E				JZ      p5lbl1 
+ 3C4A  A1 68F4 R			MOV     AX,[data46] 
+ 3C4D  0F				DB      0Fh 
+ 3C4E  16				PUSH    SS 
+ 3C4F  03 55 AA				ADD     DX,[DI-56h] 
+ 3CA8				org	3ca8h 
+ 3CA8				p5lbl1 label near 
+ 3CA8				proc5 endp 
+				 
+ 3ECB				org	3ecbh 
+ 3ECB				nearsub6 label near 
+ 7FF1				org	7ff1h 
+ 7FF1				nearsub7 label near 
+ 8A9E				org 	8a9eh 
+ 8A9E				nearsub8 label near 
+ FF1D				org	0ff1dh 
+ FF1D				nearsub9 label near 
+				 
+ FF1D				_TEXT ends 
+					end proc3 
+
+Macros:
+
+		N a m e			Lines
+
+CALLER . . . . . . . . . . . . .  	  27
+EXITPROC . . . . . . . . . . . .  	   3
+FUNC5CALL  . . . . . . . . . . .  	   6
+FUNCALL  . . . . . . . . . . . .  	   5
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+DATA . . . . . . . . . . . . . .  	68F6	AT	4000	
+LIB1 . . . . . . . . . . . . . .  	01FC	AT	2087	
+LIB2 . . . . . . . . . . . . . .  	01EE	AT	20C8	
+LIB3 . . . . . . . . . . . . . .  	0402	AT	2110	
+LIB4 . . . . . . . . . . . . . .  	0306	AT	2158	
+LIB5 . . . . . . . . . . . . . .  	000F	AT	24C9	
+_TEXT  . . . . . . . . . . . . .  	FF1D	WORD	PUBLIC	'CODE'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+DATA01 . . . . . . . . . . . . .  	L BYTE	00AC	DATA
+DATA02 . . . . . . . . . . . . .  	L WORD	00B2	DATA
+DATA03 . . . . . . . . . . . . .  	L BYTE	00B6	DATA
+DATA04 . . . . . . . . . . . . .  	L BYTE	00B8	DATA
+DATA05 . . . . . . . . . . . . .  	L WORD	00BC	DATA
+DATA06 . . . . . . . . . . . . .  	L WORD	00C0	DATA
+DATA07 . . . . . . . . . . . . .  	L BYTE	00C2	DATA
+DATA08 . . . . . . . . . . . . .  	L BYTE	00D8	DATA
+DATA09 . . . . . . . . . . . . .  	L WORD	00DC	DATA
+DATA10 . . . . . . . . . . . . .  	L WORD	00E0	DATA
+DATA11 . . . . . . . . . . . . .  	L BYTE	00E2	DATA
+DATA12 . . . . . . . . . . . . .  	L BYTE	00E6	DATA
+DATA13 . . . . . . . . . . . . .  	L BYTE	00EC	DATA
+DATA14 . . . . . . . . . . . . .  	L BYTE	00EE	DATA
+DATA15 . . . . . . . . . . . . .  	L BYTE	00F0	DATA
+DATA16 . . . . . . . . . . . . .  	L WORD	00F2	DATA
+DATA17 . . . . . . . . . . . . .  	L WORD	00F4	DATA
+DATA18 . . . . . . . . . . . . .  	L WORD	00F6	DATA
+DATA19 . . . . . . . . . . . . .  	L WORD	00F8	DATA
+DATA20 . . . . . . . . . . . . .  	L WORD	00FA	DATA
+DATA21 . . . . . . . . . . . . .  	L WORD	00FC	DATA
+DATA22 . . . . . . . . . . . . .  	L BYTE	010A	DATA
+DATA23 . . . . . . . . . . . . .  	L BYTE	0138	DATA
+DATA24 . . . . . . . . . . . . .  	L BYTE	023C	DATA
+DATA25 . . . . . . . . . . . . .  	L BYTE	0286	DATA
+DATA26 . . . . . . . . . . . . .  	L BYTE	0288	DATA
+DATA27 . . . . . . . . . . . . .  	L WORD	0296	DATA
+DATA28 . . . . . . . . . . . . .  	L WORD	029A	DATA
+DATA29 . . . . . . . . . . . . .  	L WORD	029C	DATA
+DATA30 . . . . . . . . . . . . .  	L BYTE	02AE	DATA
+DATA31 . . . . . . . . . . . . .  	L WORD	0376	DATA
+DATA32 . . . . . . . . . . . . .  	L WORD	0386	DATA
+DATA33 . . . . . . . . . . . . .  	L BYTE	038E	DATA
+DATA34 . . . . . . . . . . . . .  	L BYTE	0390	DATA
+DATA35 . . . . . . . . . . . . .  	L WORD	03A6	DATA
+DATA36 . . . . . . . . . . . . .  	L WORD	03AA	DATA
+DATA37 . . . . . . . . . . . . .  	L WORD	03B6	DATA
+DATA38 . . . . . . . . . . . . .  	L WORD	03B8	DATA
+DATA39 . . . . . . . . . . . . .  	L WORD	03BA	DATA
+DATA40 . . . . . . . . . . . . .  	L WORD	03C2	DATA
+DATA41 . . . . . . . . . . . . .  	L WORD	03C4	DATA
+DATA42 . . . . . . . . . . . . .  	L WORD	03CE	DATA
+DATA43 . . . . . . . . . . . . .  	L BYTE	0BDC	DATA
+DATA44 . . . . . . . . . . . . .  	L BYTE	17D2	DATA
+DATA45 . . . . . . . . . . . . .  	L BYTE	17D3	DATA
+DATA46 . . . . . . . . . . . . .  	L WORD	68F4	DATA
+
+EXIT . . . . . . . . . . . . . .  	L NEAR	3B8E	_TEXT
+
+FUNCT01  . . . . . . . . . . . .  	L FAR 	0000	LIB1
+FUNCT02  . . . . . . . . . . . .  	L FAR 	01FC	LIB1
+FUNCT03  . . . . . . . . . . . .  	L FAR 	001C	LIB2
+FUNCT04  . . . . . . . . . . . .  	L FAR 	0043	LIB2
+FUNCT05  . . . . . . . . . . . .  	L FAR 	01A7	LIB2
+FUNCT06  . . . . . . . . . . . .  	L FAR 	01EE	LIB2
+FUNCT07  . . . . . . . . . . . .  	L FAR 	02ED	LIB3
+FUNCT08  . . . . . . . . . . . .  	L FAR 	02F7	LIB3
+FUNCT09  . . . . . . . . . . . .  	L FAR 	0402	LIB3
+FUNCT10  . . . . . . . . . . . .  	L FAR 	0306	LIB4
+FUNCT11  . . . . . . . . . . . .  	L FAR 	000F	LIB5
+
+LABEL3 . . . . . . . . . . . . .  	L NEAR	3A0F	_TEXT
+
+NEARSUB1 . . . . . . . . . . . .  	L NEAR	2B54	_TEXT
+NEARSUB2 . . . . . . . . . . . .  	L NEAR	30D9	_TEXT
+NEARSUB3 . . . . . . . . . . . .  	L NEAR	30F4	_TEXT
+NEARSUB4 . . . . . . . . . . . .  	L NEAR	313D	_TEXT
+NEARSUB5 . . . . . . . . . . . .  	L NEAR	35F7	_TEXT
+NEARSUB6 . . . . . . . . . . . .  	L NEAR	3ECB	_TEXT
+NEARSUB7 . . . . . . . . . . . .  	L NEAR	7FF1	_TEXT
+NEARSUB8 . . . . . . . . . . . .  	L NEAR	8A9E	_TEXT
+NEARSUB9 . . . . . . . . . . . .  	L NEAR	FF1D	_TEXT
+
+P1LBL1 . . . . . . . . . . . . .  	L NEAR	3968	_TEXT
+P1LBL2 . . . . . . . . . . . . .  	L NEAR	3971	_TEXT
+P4LBL2 . . . . . . . . . . . . .  	L NEAR	3BE3	_TEXT
+P4LOOP . . . . . . . . . . . . .  	L NEAR	3BAB	_TEXT
+P4SKIP . . . . . . . . . . . . .  	L NEAR	3BFB	_TEXT
+P5LBL1 . . . . . . . . . . . . .  	L NEAR	3CA8	_TEXT
+PROC1  . . . . . . . . . . . . .  	N PROC	3960	_TEXT	Length = 001A
+PROC2  . . . . . . . . . . . . .  	N PROC	397A	_TEXT	Length = 00E3
+PROC3  . . . . . . . . . . . . .  	N PROC	3A5D	_TEXT	Length = 0135
+PROC4  . . . . . . . . . . . . .  	N PROC	3B92	_TEXT	Length = 0082
+PROC5  . . . . . . . . . . . . .  	N PROC	3C14	_TEXT	Length = 0094
+
+SKIP_FUN8  . . . . . . . . . . .  	L NEAR	3B54	_TEXT
+SKIP_INC . . . . . . . . . . . .  	L NEAR	3B40	_TEXT
+
+??0000 . . . . . . . . . . . . .  	L NEAR	3A82	_TEXT
+??0001 . . . . . . . . . . . . .  	L NEAR	3AA0	_TEXT
+??0002 . . . . . . . . . . . . .  	L NEAR	3AB1	_TEXT
+??0003 . . . . . . . . . . . . .  	L NEAR	3AC8	_TEXT
+??0004 . . . . . . . . . . . . .  	L NEAR	3AE8	_TEXT
+??0005 . . . . . . . . . . . . .  	L NEAR	3B06	_TEXT
+??0006 . . . . . . . . . . . . .  	L NEAR	3B17	_TEXT
+??0007 . . . . . . . . . . . . .  	L NEAR	3B2E	_TEXT
+@FILENAME  . . . . . . . . . . .  	TEXT  JUNKCODE		
+
+
+    369 Source  Lines
+    481 Total   Lines
+    103 Symbols
+
+  49438 + 366562 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
